@@ -15,7 +15,7 @@ function displayUsers()
      }
      });
       console.log(html1);
-      document.querySelector("#userTableBody").innerHTML = html1;
+      document.querySelector("#userTableBody").innerHTML=html1;
   }
 function calAge(date1)
   {
@@ -57,11 +57,11 @@ function handleSubmit(event)
     document.querySelector("#registrationForm").reset();
     displayUsers();
   }
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",()=>{
   const storedUsers1=localStorage.getItem("users");
   if(storedUsers1)
     {
-      users = JSON.parse(storedUsers);
+      users = JSON.parse(storedUsers1);
       displayUsers();
     }
   });
