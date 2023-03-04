@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       displayUsers();
     }
   });
-document.querySelector("#registrationForm").addEventListener("submit", handleSubmit);
+document.querySelector("#registrationForm").addEventListener("submit",handleSubmit);
 document.querySelector("#clearTableBtn").addEventListener("click", () => {
   users = [];
   localStorage.removeItem("users");
